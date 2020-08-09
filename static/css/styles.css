@@ -23,7 +23,8 @@ input {
 .nav-wrapper a {
     color: var(--blue-celestial-color);
 }
-h1 {
+h1,
+h2 {
     text-align: center;
 }
 i {
