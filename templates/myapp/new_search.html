@@ -2,17 +2,17 @@
 <h2>{{search | title }}</h2>
 <div class="row">
     {% for result in final_results %}
-    <div class="col s4">
-        <div class="card">
+    <div class="col m4 s12">
+        <div class="card grey darken-2">
             <div class="card-image">
                 <a href="{{result.1}}"
                     ><img src="{{result.3}}" alt="{{result.0}}"
                 /></a>
             </div>
-            <div class="card-content">
+            <div class="card-content grey darken-3">
                 <p>{{result.0}}</p>
             </div>
-            <div class="card-action">
+            <div class="card-action grey darken-2">
                 <a href="{{result.1}}" target="_blank"
                     >View listing: Price {{result.2}}</a
                 >

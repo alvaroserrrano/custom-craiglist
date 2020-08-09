@@ -27,23 +27,16 @@ h1,
 h2 {
     text-align: center;
 }
-i {
-    margin-top: 25px;
-    color: var(--pink-color);
-}
 .card {
     height: 400px;
     overflow: hidden;
-    background-color: var(--nav-bg-color);
-    margin-bottom: 40px;
+    margin: 10px !important;
 }
 
 .card-image {
     height: 250px;
     overflow: hidden;
 }
-.card-content,
-.card-action {
-    background-color: var(--nav-bg-color);
-    color: var(--main-text-color);
+.card-action a {
+    color: var(--purple-color) !important;
 }
