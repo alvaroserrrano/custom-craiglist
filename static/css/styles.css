@@ -1,3 +1,35 @@
+:root {
+    --main-bg-color: rgb(0, 0, 0);
+    --main-text-color: rgb(200, 200, 200);
+    --nav-bg-color: rgb(29, 30, 32);
+    --purple-color: rgb(180, 118, 247);
+    --blue-celestial-color: rgb(23, 212, 191);
+    --pink-color: rgb(254, 62, 118);
+}
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+.title {
+    color: var(--purple-color);
+}
+input {
+    color: var(--main-text-color);
+}
+.navbar {
+    background-color: var(--nav-bg-color);
+}
+.nav-wrapper a {
+    color: var(--blue-celestial-color);
+}
+h1 {
+    text-align: center;
+}
+i {
+    margin-top: 25px;
+    color: var(--pink-color);
+}
 .card {
     height: 400px;
     overflow: hidden;
