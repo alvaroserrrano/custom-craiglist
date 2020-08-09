@@ -34,9 +34,16 @@ i {
 .card {
     height: 400px;
     overflow: hidden;
+    background-color: var(--nav-bg-color);
+    margin-bottom: 40px;
 }
 
 .card-image {
     height: 250px;
     overflow: hidden;
+}
+.card-content,
+.card-action {
+    background-color: var(--nav-bg-color);
+    color: var(--main-text-color);
 }

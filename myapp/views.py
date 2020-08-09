@@ -6,7 +6,7 @@ from requests.compat import quote_plus
 from . import models
 
 BASE_CRAIGLIST_URL = 'https://detroit.craigslist.org/search/?query='
-BASE_IMAGE_URL = 'https://images.craigslist.org/{}_300x300.jpg
+BASE_IMAGE_URL = 'https://images.craigslist.org/{}_300x300.jpg'
 
 def home(request):
     return render(request, 'base.html')
@@ -22,7 +22,7 @@ def new_search(request):
     soup = BeautifulSoup(data, features='html.parser')
     results = soup.find_all('li', {'class':'result-row'})
     final_results = []
-    for result in final_results:
+    for result in results:
         result_title = result.find(class_='result-title').text
         result_url = result.find('a').get('href')
         if result.find(class_='result-price'):
@@ -39,6 +39,6 @@ def new_search(request):
 
     context={
         'final_results': final_results,
-        'search': search
+        'search': search,
     }
     return render(request, 'myapp/new_search.html', context)
